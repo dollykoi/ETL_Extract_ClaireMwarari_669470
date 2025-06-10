@@ -29,8 +29,8 @@ ETL_Extract_ClaireMwarari_669470/
 ├── .gitignore
 ├── README.md
 ├── last_extraction.txt
-├── <notebook_file>.ipynb
-└── ...
+├── etl_extract.ipynb
+└── sales_data_large.cvs
 ```
 
 ## Author
