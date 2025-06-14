@@ -8,18 +8,30 @@ This project demonstrates a basic ETL (Extract, Transform, Load) pipeline using 
 ## What I Have Done
 
 - **Set up the project environment** using Jupyter Notebook.
+  
 - **Created a `.gitignore` file** to exclude unnecessary files and folders such as:
-  - Jupyter notebook checkpoints
-  - Python cache folders
-  - Log files
-  - SQLite databases
-  - Extraction logs
+  - Jupyter notebook checkpoints.
+  - Python cache folders.
+  - Log files.
+  - SQLite databases.
+  - Extraction logs.
+
 - **Initialized a Git repository** and connected it to GitHub for version control.
+  
 - **Documented and committed every step** of the ETL process for transparency and reproducibility.
+  
 - **Implemented the ETL workflow** in a Jupyter notebook, showcasing:
-  - Data extraction from a given source
-  - Data transformation and cleaning
-  - Loading the prepared data for analysis
+  - Data extraction from a given source.
+  - Data transformation and cleaning.
+  - Loading the prepared data for analysis.
+    
+- **Implemented data transformation** on the **full and incremental data extraction** by:
+  - Removing duplicates and filling missing values (*Cleaning*).
+  - Adding a new `total_price` column (`quantity` × `unit_price`) (*Enrichment*).
+  - Standardizes the date format to `YYYY-MM-DD` (*Structural*).
+- Transformed datasets are saved as:
+  - `transformed_full.csv`
+  - `transformed_incremental.csv`
 
 ## Folder Structure
 
@@ -30,7 +42,9 @@ ETL_Extract_ClaireMwarari_669470/
 ├── README.md
 ├── etl_extract.ipynb
 ├── last_extraction.txt
-└── sales_data_large.csv
+├── sales_data_large.csv
+├── transformed_full.csv
+└── transformed_incremental.csv
 ```
 
 ## Author
